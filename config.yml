@@ -304,7 +304,10 @@ messages:
   goodbye_spectators: "Thanks for watching!"                                           # Message sent to the spectators after the end of a game.
 
 whitelist:                                # List of users whose challenges are always accepted.
-- Bot1nokk
+- bot1e
+- SF_Bot1nok
+- TestingBot1
+- Lucky_0wl
 
 blacklist:                                # List of users who are not challenged and whose challenges are declined.
 - LeelaQueenOdds
