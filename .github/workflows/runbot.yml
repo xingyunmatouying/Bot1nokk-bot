@@ -27,7 +27,7 @@ jobs:
           curl -sSL https://raw.githubusercontent.com/ppigazzini/stockfish-downloader/main/posix_helper.sh | sh -s
           tar -xf stockfish-*.tar
           rm stockfish-*.tar
-          mv stockfish/stockfish-* engines/stockfish
+          mv -f stockfish/stockfish-* engines/stockfish
           rm -r stockfish
 
       - name: Give perms to execute engines
