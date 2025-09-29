@@ -22,6 +22,14 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Install Stockfish
+        run: |
+          curl -sSL https://raw.githubusercontent.com/ppigazzini/stockfish-downloader/main/posix_helper.sh | sh -s
+          tar -xf stockfish-*.tar
+          rm stockfish-*.tar
+          mv stockfish/stockfish-* engines/stockfish
+          rm -r stockfish
+
       - name: Give perms to execute engines
         run: chmod +x ./engines/stockfish
 
