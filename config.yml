@@ -244,7 +244,7 @@ matchmaking:
       tc: 2+1
       weight: 100
     blitz5p3:
-      tc: 2+1
+      tc: 5+3
       weight: 100
 #    blitz:
 #      tc: 3+1
